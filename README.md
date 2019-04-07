@@ -1,3 +1,3 @@
 # Hadiii Chrome Extension
 
-This Chrome extension provides diffrerent utilites with chrome context menu
+This Chrome extension provides numerous utilites with chrome context menu
