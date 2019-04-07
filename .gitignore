@@ -1,0 +1,8 @@
+shared/manifest.json
+shared/bootstrap.js
+shared/bootstrap.css
+shared/*.bat
+shared/*.txt
+shared/.settings
+**/.project
+**/.settings
