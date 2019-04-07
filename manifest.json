@@ -1,0 +1,49 @@
+{
+	"manifest_version": 2,
+	"name": "Hadi Paylaş",
+	"description": "This extension implemets some helper pages and context menus.",
+	"version": "1.0.0.1",
+	"icons": {
+		"16": "images/hadiii.png",
+		"48": "images/hadiii.png",
+		"128": "images/hadiii.png"
+	},
+	"browser_action": {
+		"default_title": "Hadii Context Menu Extensions",
+		"default_icon": "images/hadiii.png",
+		"default_popup": "pop.html"
+	},
+	"background": {
+		"scripts": [
+			"shared/bootstrap2.js",
+			"background.js"
+		]
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"http://*/*",
+				"https://*/*"
+			],
+			"exclude_matches": [
+				"http://api.hadiii.com/*"
+			],
+			"js": [
+				"shared/bootstrap2.js",
+				"content_script.js"
+			],
+			"css": [
+				"shared/bootstrap2.css"
+			]
+		}
+	],
+	"permissions": [
+		"contextMenus",
+		"cookies",
+		"*://*/*",
+		"tabs",
+		"webNavigation",
+		"http://*/*",
+		"https://*/*"
+	]
+}
