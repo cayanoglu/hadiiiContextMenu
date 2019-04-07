@@ -10,6 +10,7 @@
 		format('svg');
 	font-weight: normal;
 	font-style: normal;
+	
 }
 
 div.icon-after:after, div.icon-before:before {
@@ -225,7 +226,7 @@ body.chrome-ext-pop * {
 	margin-left: 30px;
     margin-right: 10px;
     color: silver;
-    
+
 }
 
 .llebnplhkecpjbnlgafdfinohdfdchjn input,
